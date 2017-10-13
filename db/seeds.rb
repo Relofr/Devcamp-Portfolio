@@ -1,7 +1,7 @@
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "random body text"
+    body: "random body text",
   )
 end
 
@@ -21,7 +21,7 @@ puts "5 skills created"
   Portfolio.create!(
     title: "portfolio title: #{portfolio_item}",
     subtitle: "My great service" ,
-    body: "random body text random body text random body text random body text random body text random body text random body text random body text random body text random body text random body text random body text" ,
+    body: "random portfolio body text" ,
     main_image: "http://via.placeholder.com/600x400" ,
     thumb_image: "http://via.placeholder.com/350x200" ,
   )
