@@ -7,7 +7,5 @@ Rails.application.routes.draw do
 
   resources :blogs
 
-  resources :blogs
-
   root to: "pages#home"
 end
