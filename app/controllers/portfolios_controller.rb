@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
   layout 'portfolio'
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -18,7 +19,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Blog was successfully created.' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
       else
         format.html { render :new }
       end
@@ -27,6 +28,7 @@ class PortfoliosController < ApplicationController
 
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+
   end
 
   def update
@@ -34,7 +36,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: 'Blog was successfully updated.' }
+        format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -49,21 +51,23 @@ class PortfoliosController < ApplicationController
     # Perform the lookup
     @portfolio_item = Portfolio.find(params[:id])
 
-    # Destroy the record
+    # Destroy/delete the record
     @portfolio_item.destroy
 
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record successfully removed.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
 
   private
+
   def portfolio_params
-    params.required(portfolio).permit(:title,
+    params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
-                                      :technologies_attributes, [:name]
-                                      )
+                                      technologies_attributes: [:name]
+                                     )
   end
+
 end
