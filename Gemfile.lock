@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Relofr/kyle_hatch_view_tool
+  revision: a0da4cf7855c1e5b31656d7c432523fbc1e71fc3
+  specs:
+    kyle_hatch_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -69,9 +75,10 @@ GEM
     ffi (1.9.18)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    globalid (0.4.0)
+    globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (0.8.6)
+    i18n (0.9.0)
+      concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -189,6 +196,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
+  kyle_hatch_view_tool!
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
