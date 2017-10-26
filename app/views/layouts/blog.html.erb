@@ -13,19 +13,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-  <!-- Start of nav -->
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">New features</a>
-          <a class="nav-link" href="#">Press</a>
-          <a class="nav-link" href="#">New hires</a>
-          <a class="nav-link" href="#">About</a>
-        </nav>
-      </div>
-    </div>
+  <body>
+    <!-- Start of nav -->
+    <%= render 'shared/blog_nav' %>
     <!-- end of nav -->
 
     <!-- start of blog header -->
@@ -45,7 +35,8 @@
 
 
 
-        <%= render "shared/nav", location: 'bottom' %>
+
+
         <%= yield %>
 
         <!-- start of sidebar -->
@@ -92,7 +83,7 @@
           </p>
         </footer>
         <!-- end of footer -->
-        <%= login_helper 'nav-link' %>
+
         <%= render "shared/nav", location: 'bottom' %>
         <%= source_helper("blog") %>
       </div>
