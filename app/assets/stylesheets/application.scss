@@ -79,7 +79,6 @@ body {
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
-
 }
 
 .nav-masthead .nav-link:hover,
@@ -163,14 +162,18 @@ body {
 }
 
 /*
- * Custom styles
+ * Custom Styles
  */
 
- .card-body {
-   color: black;
-   text-align: left;
- }
+.card-block {
+  color: black;
+  text-align: left;
+}
 
- .auth-links a {
-   color: black;
- }
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
