@@ -168,9 +168,15 @@ h6, .h6 {
 }
 
 /*
-* Custom styles
-*/
+ * Custom styles
+ */
 
 .social-links li {
-  font-size: 2.5ems;
+  font-size: 3em;
+}
+
+.pagination a {
+  background-color: white;
+  border-radius: 1em;
+  font-size: 1em;
 }
