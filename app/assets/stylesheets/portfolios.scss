@@ -32,7 +32,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 .card {
@@ -41,6 +41,7 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  background-color: #f7f7f7;
 }
 
 .card > img {
@@ -67,10 +68,13 @@ footer p {
 }
 
 #portfolio_nav {
+  position: fixed;
+  top: 0;
   padding: 1px;
   background-color: white;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 #portfolio_nav a {
@@ -79,14 +83,7 @@ footer p {
   font-family: "GlosaRomanRegular";
   font-size: 1.3em;
   letter-spacing: 1px;
-  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-#portfolio_nav a:hover {
-}
-
-#portfolio_nav a:hover {
-
+  
 }
