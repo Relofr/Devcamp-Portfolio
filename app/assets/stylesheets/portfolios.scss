@@ -58,40 +58,20 @@ footer p {
   margin-bottom: .25rem;
 }
 
+/* Custom styles */
 
+.portfolio-form {
+  padding: 20px;
 
-
-// NAVBAR
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #343d46;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 1em;
-   }
+//navbar
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 1px;
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
   }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
 }
