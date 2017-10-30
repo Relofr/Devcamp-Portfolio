@@ -67,8 +67,10 @@ footer p {
 }
 
 #portfolio_nav {
+  padding: 1px;
   background-color: white;
   width: 100%;
+  text-align: center;
 }
 
 #portfolio_nav a {
@@ -76,10 +78,15 @@ footer p {
   display: inline-block;
   font-family: "GlosaRomanRegular";
   font-size: 1.3em;
-  letter-spacing: .8px;
-  position: center;
+  letter-spacing: 1px;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
+}
 
+#portfolio_nav a:hover {
+}
+
+#portfolio_nav a:hover {
 
 }
