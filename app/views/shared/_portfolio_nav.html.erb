@@ -1,9 +1,9 @@
 <!-- <div class="topnav">
-    <a><%= render "shared/nav", location: 'top' %></a>
+    <%= nav_helper 'nav-link', 'span' %>
     <a><%= login_helper 'nav-link' %></a>
 </div> -->
 
-<div class="collapse bg-dark" id="navbarHeader">
+<!-- <div class="collapse bg-dark" id="navbarHeader">
   <div class="container">
     <div class="row">
       <div class="col-sm-8 py-4">
@@ -28,4 +28,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-</div>
+</div> -->
+
+<nav class="main-navigation" class="clearfix" role="navigation" id="portfolio_nav">
+  <div class="navbar-class">
+    <%= nav_helper 'nav-link', 'span' %>
+    <%= login_helper 'nav-link' %>
+  </div>
+</nav>
