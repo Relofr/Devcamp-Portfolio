@@ -1,3 +1,11 @@
+User.create!(
+  email: 'admin@admin.com',
+  name: 'Kyle Hatch',
+  password: 'asdfasdf', 
+  password_confirmation: 'asdfasdf',
+  roles: 'site_admin'
+  )
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -10,7 +18,7 @@ puts "3 topics created"
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "random body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body text",
+    body: "random body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body",
     topic_id: Topic.last.id
   )
 end
@@ -31,7 +39,7 @@ puts "5 skills created"
   Portfolio.create!(
     title: "portfolio title: #{portfolio_item}",
     subtitle: "Ruby on Rails",
-    body: "random portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body text" ,
+    body: "random portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom" ,
     main_image: "http://via.placeholder.com/600x400" ,
     thumb_image: "http://via.placeholder.com/350x200" ,
 
@@ -42,7 +50,7 @@ end
   Portfolio.create!(
     title: "portfolio title: #{portfolio_item}",
     subtitle: "Angular",
-    body: "random portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body text" ,
+    body: "random portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom portfolio body textrandom" ,
     main_image: "http://via.placeholder.com/600x400" ,
     thumb_image: "http://via.placeholder.com/350x200" ,
   )
