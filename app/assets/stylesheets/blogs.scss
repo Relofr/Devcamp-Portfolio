@@ -159,11 +159,13 @@ h6, .h6 {
  */
 
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
+  width: 100%;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
@@ -181,4 +183,18 @@ h6, .h6 {
   background-color: white;
   border-radius: 1em;
   font-size: 1em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
 }
