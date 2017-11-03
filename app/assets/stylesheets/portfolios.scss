@@ -88,3 +88,16 @@ footer p {
   text-decoration: none;
 
 }
+
+// START OF SLIDESHOW 
+
+.carousel{
+    width: 100%;
+    margin-top: 35px;
+}
+.carousel .item{
+    min-height: 280px;
+}
+.carousel .item img{
+    margin: 0 auto;
+}
