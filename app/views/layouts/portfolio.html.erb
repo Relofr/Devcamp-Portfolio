@@ -12,18 +12,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+    <body>
 
-  <%= render 'shared/portfolio_nav' %>
+      <%= render 'shared/portfolio_nav' %>
+      <%= render 'shared/portfolio_masthead' %>
+      
+      <%= yield %>
 
-  <%= render 'shared/portfolio_masthead' %>
-  
-  <%= yield %>
+      <%= render 'shared/portfolio_footer' %>
 
-  <%= render 'shared/portfolio_footer' %>
-
-  <%= alerts %>
-
-  <%= source_helper("portfolio") %>
+      <%= alerts %>
   </body>
 </html>
