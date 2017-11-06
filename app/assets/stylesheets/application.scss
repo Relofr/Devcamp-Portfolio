@@ -125,7 +125,7 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -175,6 +175,7 @@ body {
 
 .auth-links a {
   color: black;
+  
 }
 
 .register-text {
@@ -203,7 +204,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('') no-repeat;
+  background: image-url('NewMountainSceneCopy.jpeg') no-repeat;
   background-size: cover;
 }
 
