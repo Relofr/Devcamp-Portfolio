@@ -9,6 +9,10 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Slab|Ubuntu|Yantramanav" rel="stylesheet">
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -26,16 +30,11 @@
         <%= yield %>
 
         <%= render 'shared/blog_sidebar' %>
+    </div>
+
+        <%= render 'shared/blog_footer' %>
 
         <%= alerts %>
-        
-      </div>
-
-        <!-- start of footer -->
-        <%= render 'shared/blog_footer' %>
-        <!-- end of footer -->
-
-        <%= source_helper("blog") %>
     </div>
   </body>
 </html>

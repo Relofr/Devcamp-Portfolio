@@ -3,7 +3,8 @@
 @import "gritter";
 
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  min-height: 75rem;
+  font-family: 'Yantramanav', sans-serif;
 }
 
 .navbar {
@@ -15,18 +16,22 @@ body {
   padding-bottom: 6rem;
   margin-bottom: 0;
   background-color: #fff;
+  
 }
 
 .jumbotron p:last-child {
   margin-bottom: 0;
+  
 }
 
 .jumbotron-heading {
   font-weight: 300;
 }
 
+
 .jumbotron .container {
   max-width: 40rem;
+  
 }
 
 .album {
@@ -38,7 +43,7 @@ body {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -72,14 +77,15 @@ footer p {
   position: fixed;
   top: 0;
   padding: 1px;
-  background-color: white;
+  // background-color: #e4ffff;
+  // background-color: transparent;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
 
 #portfolio_nav a {
-  color: black;
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-family: "GlosaRomanRegular";
   font-size: 1.3em;
@@ -89,15 +95,22 @@ footer p {
 
 }
 
-// START OF SLIDESHOW 
+#portfolio-background {
+  position: fixed;
+  top: 50%;
+  left: 49.5%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('octopus15.jpeg') no-repeat;
+  background-size: cover;
+}
 
-.carousel{
-    width: 100%;
-    margin-top: 35px;
-}
-.carousel .item{
-    min-height: 280px;
-}
-.carousel .item img{
-    margin: 0 auto;
+
+#portfolioMasthead {
+  z-index: 10;
 }

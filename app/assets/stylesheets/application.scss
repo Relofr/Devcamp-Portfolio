@@ -27,14 +27,28 @@ a:hover {
  * Base structure
  */
 
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Yantramanav', sans-serif;
+// font-family: 'Press Start 2P', cursive;
+
 html,
 body {
   height: 100%;
+  
 }
 body {
-  color: #fff;
+  color: #b52626;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6, {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -76,14 +90,16 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgb(0, 0, 0);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  
+  
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgb(218, 62, 0);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -91,8 +107,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: rgb(218, 62, 0);
+  border-bottom-color: rgb(218, 62, 0);
 }
 
 @media (min-width: 48em) {
@@ -123,7 +139,7 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -173,6 +189,7 @@ body {
 
 .auth-links a {
   color: black;
+  
 }
 
 .register-text {
@@ -201,12 +218,12 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('') no-repeat;
+  background: image-url('NewMountainSceneCopy.jpeg') no-repeat;
   background-size: cover;
 }
 
 .app-footer {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .tech-news {
@@ -222,3 +239,40 @@ body {
 .tech-news > .card {
   padding: 20px;
 }
+
+.lead {
+  color: black;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;  
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-image {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.technewsfont {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+}
+

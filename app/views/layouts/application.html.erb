@@ -6,9 +6,13 @@
     <title> <%= @page_title %> </title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Slab|Ubuntu|Yantramanav" rel="stylesheet">
+
     <meta name="keywords" content= <%= @seo_keywords %> />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -17,13 +21,13 @@
     <div class="site-wrapper-inner">
       <div class="cover-container">
 
-        <%= video_tag(
-                  'd5lcvv1DPO copy.png',
+        <%= image_tag(
+                  'NewMountainSceneCopy.jpeg',
                   id: 'background',
                   autoplay: true,
                   loop: true,
                   muted: true,
-                  poster: 'd5lcvv1DPO copy.png'
+                  poster: 'NewMountainSceneCopy.jpeg'
                 )
                 %>
 
@@ -34,8 +38,6 @@
         <%= render "shared/application_footer" %>
 
         <%= alerts %>
-
-        <%= source_helper("application") %>
 
         </div>
       </div>
