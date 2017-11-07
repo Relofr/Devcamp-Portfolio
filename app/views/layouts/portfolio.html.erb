@@ -8,19 +8,30 @@
 
     <meta name="keywords" content= <%= @seo_keywords %> />
 
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
     <body>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
+            <%= image_tag( 'octopus16.jpeg',
+                          id: 'portfolio-background',
+                          poster: 'octopus16.jpeg')
+                          %>
+            <%= render 'shared/portfolio_nav' %>
+            <%= render 'shared/portfolio_masthead' %>
+            
+            <%= yield %>
 
-      <%= render 'shared/portfolio_nav' %>
-      <%= render 'shared/portfolio_masthead' %>
-      
-      <%= yield %>
+            <%= render 'shared/portfolio_footer' %>
 
-      <%= render 'shared/portfolio_footer' %>
-
-      <%= alerts %>
+            <%= alerts %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
