@@ -27,14 +27,28 @@ a:hover {
  * Base structure
  */
 
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Yantramanav', sans-serif;
+// font-family: 'Press Start 2P', cursive;
+
 html,
 body {
   height: 100%;
+  
 }
 body {
   color: #b52626;
   text-align: center;
+}
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6, {
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -251,3 +265,14 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.skill {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.technewsfont {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+}
+
