@@ -15,7 +15,7 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: transparent;
   
 }
 
@@ -38,7 +38,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: white;
+
 }
 
 .card {
@@ -103,11 +103,11 @@ footer p {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
+  z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background: image-url('octopus16.jpeg');
   background-size: cover;
-
 }
 
 

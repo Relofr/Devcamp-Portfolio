@@ -207,7 +207,7 @@ h6, .h6, {
   margin-right: 15px;
 }
 
-.main-background {
+#main-background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -218,6 +218,7 @@ h6, .h6, {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background: image-url('mountains.jpeg');
   background-size: cover;
 }
 
