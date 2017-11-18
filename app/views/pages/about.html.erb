@@ -8,22 +8,7 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
-        <div class="skills">
-          <% @skills.each do |skill| %>
-            <div class="skill">
-              <h4><%= skill.title %></h4>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar bg-danger"
-                  role="progressbar"
-                  aria-valuenow="<%= skill.percent_utilized %>"
-                  aria-valuemax="100"
-                  style="width: <%= skill.percent_utilized %>%"
-                ></div>
-              </div>
-            </div>
-          <% end %>
-        </div>
+        <%# <%= render 'shared/skills' %>
       </div>
 
       <div class="col-md-8">
@@ -53,6 +38,66 @@
             Education
           </button>
         </p>
+
+
+<ul class="list-unstyled">
+  <li class="media">
+    <%= image_tag "ruby.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Ruby</h5>
+    </div>
+  </li>
+    <li class="media">
+    <%= image_tag "RoR.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Ruby on Rails</h5>
+    </div>
+  </li>  <li class="media">
+    <%= image_tag "PostgreSQL.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">PostgreSQL</h5>
+    </div>
+  </li>  <li class="media">
+    <%= image_tag "github.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Github</h5>
+    </div>
+  </li>
+    </li>  <li class="media">
+    <%= image_tag "HTML.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">HTML</h5>
+    </div>
+  </li>
+    </li>  <li class="media">
+    <%= image_tag "css.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">CSS</h5>
+    </div>
+  </li>
+    </li>  <li class="media">
+    <%= image_tag "Photoshop.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Photoshop</h5>
+    </div>
+  </li>
+    </li>
+    </li>  <li class="media">
+    <%= image_tag "Ai.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Illistrator</h5>
+    </div>
+  </li>
+    </li>
+    </li>  <li class="media">
+    <%= image_tag "command-line.png", width: '50px', height: '50px', alt: "Generic placeholder image" %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">CLI</h5>
+    </div>
+  </li>
+</ul>
+
+
 
         <p>
           <div class="collapse" id="jobHistory">
