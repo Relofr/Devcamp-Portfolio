@@ -73,17 +73,19 @@ h6, .h6, {
  * Global Navbar
  */
 .globalnav {
+
+  overflow: hidden;
+  background-color: #131D30;
   position: fixed;
   top: 0;
-  padding: .5%;
-  // background-color: #e4ffff;
-  // background-color: transparent;
-  text-align: center;
+  width: 100%;
+  display: block;
   z-index: 10;
+ 
 }
 
 .globalnav a {
-  color: rgb(0, 0, 0);
+  color: #9BB4AF;
   display: inline-block;
   font-family: "GlosaRomanRegular";
   font-size: 1.3em;
@@ -92,18 +94,20 @@ h6, .h6, {
 }
 
 .globalnav a:hover {
-    color: rgb(143, 0, 0);
-    font-size: 1.5em;
+    color: rgb(184, 12, 0);
+    font-size: 1.3em;
     text-decoration: underline;
-    text-decoration-style: double;
+    text-decoration-style: single;
 }
 
 .globalnav .active {
-    color: rgb(143, 0, 0);
-    font-size: 1.5em;
+    color: rgb(184, 12, 0);
+    font-size: 1.3em;
     text-decoration: underline;
-    text-decoration-style: double;
-
+    text-decoration-style: single;
+}
+#myname {
+  color: white;
 }
 /*
  * Home Buttons
@@ -124,6 +128,13 @@ h6, .h6, {
 
 .page-footer {
   color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  display: block;
+  z-index: 10;
 }
 .page-footer {
     position: absolute;
@@ -263,4 +274,10 @@ h6, .h6, {
   font-family: 'Press Start 2P', cursive;
   color: black;
 }
+
+
+
+
+
+
 
