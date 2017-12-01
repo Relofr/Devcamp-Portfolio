@@ -42,7 +42,7 @@ body {
   padding: 3.5%;
   margin-bottom: 9%;
   border: 0;
-  background-color: #31466d;
+  background-color: #333333;
 }
 
 .card > img {
@@ -79,34 +79,39 @@ body {
 }
 
 .globalnav {
+  overflow: hidden;
+  background-color: #131D30;
   position: fixed;
   top: 0;
-  padding: .5%;
-  // background-color: #e4ffff;
-  // background-color: transparent;
   width: 100%;
-  text-align: center;
+  display: block;
   z-index: 10;
+  text-align: center;
 }
 
 .globalnav a {
-  color: rgb(0, 0, 0);
+  color: #9BB4AF;
   display: inline-block;
   font-family: "GlosaRomanRegular";
   font-size: 1.3em;
   text-transform: uppercase;
   text-decoration: none;
+  
+}
+.globalnav a:hover {
+  color: rgb(92, 174, 224);
+  font-size: 1.3em;
+  text-decoration: underline;
+  text-decoration-style: single;
 }
 
+.globalnav .active {
+  color: rgb(92, 174, 224);
+  font-size: 1.3em;
+  text-decoration: underline;
+  text-decoration-style: single;
+}
 #myname {
-  color: rgb(139, 0, 0);
-  margin-right: 5%;
+  color: white;
 }
 
-// OCEAN
-
-html,
-
-canvas {
-	display: block;	
-}
