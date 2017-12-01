@@ -37,14 +37,23 @@ body {
 }
 
 .card {
+  color: #9BB4AF;
   float: left;
   width: 100%;
   padding: 3.5%;
   margin-bottom: 9%;
   border: 0;
-  background-color: #333333;
+  background-color: #131D30;
+  border-radius: 5px;
+  font-size: 1.3em;
 }
-
+.card a {
+  color: #9BB4AF;
+  font-size: 1.1em;
+}
+.card a:hover {
+  color: rgb(255, 255, 255);
+}
 .card > img {
   margin-bottom: 3%;
 }
@@ -56,8 +65,20 @@ body {
 /* Custom styles */
 
 .portfolio-container {
+  font-size: 1.1em;
   padding-top: 2%;
+  background-color: #131D30;
+  border-radius: 5px;
+  color: #9BB4AF;
 }
+.portfolio-container a {
+  color: black;
+}
+
+.portfolio-container a:hover {
+  color: rgb(109, 0, 0);
+}
+
 
 #portfolio-background {
   position: fixed;
