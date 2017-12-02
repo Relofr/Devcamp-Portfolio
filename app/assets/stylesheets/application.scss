@@ -247,11 +247,12 @@ h6, .h6, {
 
 //Contact card
 .app-card-container {
-  color: black;
+  color: #9BB4AF;
   text-align: left;
 }
 
 .app-card-container > .card {
+  background-color: #131D30;
   padding: 2.5%;
 }
 
@@ -260,7 +261,7 @@ h6, .h6, {
 }
 
 .app-card-container a {
-  color: rgb(139, 0, 0);
+  color: rgb(82, 185, 165);
 }
 
 .card-block {
