@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 /*
  * Globals
@@ -279,8 +280,19 @@ h6, .h6, {
   color: black;
 }
 
+.fa {
+  font-size: 2em;
+  color: rgb(175, 0, 0);
+  margin: 1%;
+}
+.fa:hover {
+  text-decoration: none;
+  color: white;
+}
 
-// :LKSJFLKSDJFL:KSD:FJLKSDFJSLDKFJSLDK:FJ:LSDKFJL
+
+
+// Homepage Animation
 
 
 

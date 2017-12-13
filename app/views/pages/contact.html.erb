@@ -1,22 +1,25 @@
-<div class="app-card-container">
-  <div class="card">
+<div class="login">
+  <div class="card login-card">
+    <div class="card-block">
     <h1>Contact Me</h1>
 
+    <div>
+      <a href="https://github.com/Relofr"<%= fa_icon "github" %></a>
+      <a href="https://www.linkedin.com/in/kyle-hatch/"<%= fa_icon "linkedin" %></a>
+    </div>
+
       <div class="row">
-        <div class="col-md-3">
-          <h3>Address</h3>
+        <div class="col-md-12">
 
-          <p>Address</p>
 
-          <h3>Phone</h3>
-
-          <p><%= number_to_phone "3852235329" %></p>
+          <p><%= number_to_phone "3852235329" %> <%= fa_icon "phone" %>
 
           <h3><p><a href="mailto:ky13h4tch@gmail.com?subject=Portfolio-Contact" "email me">Email me</a></p></h3>
 
           <div>
             <%= link_to 'View on map', 'https://www.google.com/maps/place/Bottega/@40.427811,-111.8974796,17.55z/data=!4m5!3m4!1s0x874d8554c917de07:0x865ac5eda44125a!8m2!3d40.427846!4d-111.896014', target: "_blank", rel: "alternate"%>
-        </div>  
+          </div>  
+        </div>
       </div>
     </div>
   </div>
