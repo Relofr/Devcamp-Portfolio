@@ -2,16 +2,17 @@
   <h1><div class="container-fluid technewsfont">
     Tech News</h1>
   </div>
-
   <div class="row">
     <% @tweets.each do |tweet| %>
       <div class="col-md-6">
         <div class="tech-news">
           <div class="card">
             <%= twitter_parser tweet %>
+            <div id="tech-news-background"></div>
           </div>
         </div>
       </div>
     <% end %>
   </div>
 </div>
+
